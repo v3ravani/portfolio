@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathons | Viraj Ravani</title>
+  <meta name="description"
+    content="Explore hackathons where ideas evolved into innovative solutions through collaboration, creativity, and rapid problem solving.">
+  <meta name="keywords"
+    content="Viraj Ravani Hackathons, Hackathons, Coding Competitions, Innovation, Software Engineering, Problem Solving, Team Projects, Web Development, Programming">
+  <link rel="canonical" href="https://www.virajravani.in/hackathons.html">
+  <link rel="manifest" href="../others/manifest.webmanifest">
+  <link rel="icon" type="image/jpeg" href="../assets/logo.jpg">
+
+  <!-- Preload critical asset if needed -->
+  <link rel="preload" href="asset_bg_01.avif" as="image" type="image/avif">
+
+  <!-- AI Search & Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viraj Ravani",
+    "url": "https://www.virajravani.in",
+    "jobTitle": "Product Designer & Software Engineer",
+    "knowsAbout": ["Product Design", "Software Engineering", "Mobile App Development", "UI/UX", "Generative AI", "Database Engineering"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Somaiya Vidyavihar University"
+    },
+    "award": [
+      "Gold Medalist in Mobile Application Development at IndiaSkills State & Regionals",
+      "IIT-A Hackathon Winner",
+      "3x State Level Hackathons Winner"
+    ]
+  }
+  </script>
+
+
+  <!-- Performance Prefetching -->
+  <link rel="prefetch" href="index.html">
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================
+       1. DESIGN SYSTEM & VARIABLES
+       ========================================== */
+    @font-face {
+      font-family: 'NType82';
+      src: url('../../fonts/NType82-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    :root {
+      --font-heading: 'NType82', var(--font-primary, sans-serif);
+      --font-primary: 'Plus Jakarta Sans', sans-serif;
+      --font-signature: 'Caveat', cursive;
+
+      --color-bg: #FBFBFA;
+      --color-text-primary: #191919;
+      --color-text-muted: #757575;
+
+      --color-card-pink-bg: #FFF3F3;
+      --color-bubble-pink-bg: #FBEAEA;
+      --color-card-blue-bg: #F0F6FF;
+      --color-control-blue-bg: #E0EDFF;
+
+      --sidebar-width: 280px;
+      --transition-smooth: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+      font-family: var(--font-primary);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-smooth);
+    }
+
+    /* ==========================================
+       2. LAYOUT STRUCTURE & NAVIGATION
+       ========================================== */
+    .app-container {
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Desktop Navigation Sidebar */
+    .sidebar {
+      width: var(--sidebar-width);
+      padding: 4rem 2rem 4rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: 90;
+      background-color: #ffffff;
+      border-right: 1px solid #eeeeee;
+    }
+
+    .logo {
+      font-family: var(--font-signature);
+      font-size: 2em;
+      font-weight: 700;
+      line-height: 0.82;
+      color: var(--color-text-primary);
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      transform: rotate(-3deg);
+      width: fit-content;
+    }
+
+    .logo-last {
+      margin-left: 0.6rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    .nav-item a {
+      font-size: 0.95em;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      display: inline-block;
+      padding: 0.2rem 0;
+    }
+
+    .nav-item a:hover {
+      color: var(--color-text-primary);
+      transform: translateX(3px);
+    }
+
+    .nav-item.active a {
+      color: var(--color-text-primary);
+      font-weight: 700;
+      transform: translateX(3px);
+    }
+
+    /* Desktop Left Tab Sidebar Contacts & Footer */
+    .sidebar-footer-container {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+    }
+
+    .sidebar-contacts {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .sidebar-contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background-color: rgba(25, 25, 25, 0.04);
+      color: var(--color-text-primary);
+      border-radius: 50%;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .sidebar-contact-icon:hover {
+      background-color: rgba(25, 25, 25, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .sidebar-contact-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .sidebar-resume-btn {
+      font-size: 0.9em;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      background-color: transparent;
+      border: 1px solid rgba(25, 25, 25, 0.08);
+      padding: 0.6rem 1rem;
+      border-radius: 100px;
+      text-align: center;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .sidebar-resume-btn:hover {
+      background-color: rgba(25, 25, 25, 0.03);
+      border-color: rgba(25, 25, 25, 0.15);
+    }
+
+    /* Main Content Area */
+    .main-content {
+      margin-left: var(--sidebar-width);
+      flex-grow: 1;
+      padding: 5rem 6rem 5rem 3rem;
+      max-width: 1240px;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: flex-start;
+      animation: pageFadeIn 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    @keyframes pageFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive scaling for desktop content area */
+    @media (min-width: 1025px) {
+      html {
+        font-size: 105%;
+      }
+
+      .sidebar {
+        font-size: 95.2%;
+      }
+
+      body {
+        background: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, rgba(59, 130, 246, 0) 12rem), var(--color-bg);
+      }
+    }
+
+    /* Mobile Header (Back link + Contact options) */
+    .mobile-header {
+      display: none;
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      width: auto;
+      height: 60px;
+      background: rgba(240, 240, 240, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(25, 25, 25, 0.05);
+      border-radius: 100px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+      z-index: 110;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.4rem;
+    }
+
+    .mobile-back-btn {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .mobile-contacts {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .mobile-contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background-color: rgba(25, 25, 25, 0.04);
+      color: var(--color-text-primary);
+      border-radius: 50%;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .mobile-contact-icon:active {
+      background-color: rgba(25, 25, 25, 0.08);
+      transform: scale(0.95);
+    }
+
+    .mobile-contact-icon svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* ==========================================
+       3. SECTION TITLE (Matches Home Page)
+       ========================================== */
+    .section-title {
+      font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+      font-weight: 500;
+      color: var(--color-text-primary);
+      margin-bottom: 1.8rem;
+      letter-spacing: -0.03em;
+      position: relative;
+      width: fit-content;
+      padding-bottom: 0.25rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 7px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M 0,3 Q 50,8 100,3' fill='none' stroke='%23F59E0B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    /* ==========================================
+       4. HACKATHONS GRID & CARD STYLES (No hover animation)
+       ========================================== */
+    .hack-container {
+      width: 100%;
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .hackathons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 2.2rem;
+      width: 100%;
+    }
+
+    .hackathon-card {
+      background: linear-gradient(180deg, rgba(255, 243, 243, 0.43) 0%, #ffffff 100%);
+      border: 1px solid rgba(25, 25, 25, 0.06);
+      border-radius: 28px;
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 180px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.008);
+    }
+
+    /* Styles for cards with photos */
+    .hackathon-card.has-photo {
+      padding: 0;
+      min-height: 440px;
+    }
+
+    .hackathon-photo-wrapper {
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      position: relative;
+      border-bottom: 1px solid rgba(25, 25, 25, 0.06);
+    }
+
+    .hackathon-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Corner Ribbon styling (Matches reference image) */
+    .ribbon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .ribbon span {
+      position: absolute;
+      display: block;
+      width: 170px;
+      padding: 6px 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      left: -15px;
+      top: 25px;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .ribbon-winner span {
+      background-color: #F59E0B;
+      /* Vibrant gold */
+    }
+
+    .ribbon-finalist span {
+      background-color: #0284C7;
+      /* Vibrant blue */
+    }
+
+    .ribbon-top10 span {
+      background-color: #64748B;
+      /* Slate gray */
+    }
+
+    .ribbon-top20 span {
+      background-color: #8B5CF6;
+      /* Purple */
+    }
+
+    .ribbon-second span {
+      background-color: #94A3B8;
+      /* Silver */
+    }
+
+    .ribbon-third span {
+      background-color: #D97706;
+      /* Bronze */
+    }
+
+    .hackathon-card-body {
+      padding: 1.8rem 1.8rem 2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .hackathon-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .hackathon-date {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+    }
+
+    .hackathon-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      line-height: 1.35;
+      margin-bottom: 0.2rem;
+      letter-spacing: -0.01em;
+      padding-right: 3rem;
+      /* Leave space so it doesn't overlap the ribbon visually */
+    }
+
+    .hackathon-college {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      margin-bottom: 0.8rem;
+      letter-spacing: -0.01em;
+    }
+
+    .hackathon-desc {
+      font-size: 0.92rem;
+      color: #555555;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .hackathon-footer {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: auto;
+    }
+
+    .view-cert-link {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: gap 0.2s ease, opacity 0.2s ease;
+    }
+
+    .view-cert-link:hover {
+      gap: 0.4rem;
+      opacity: 0.8;
+    }
+
+    /* ==========================================
+       5. FOOTER STYLES
+       ========================================== */
+    .footer {
+      width: 100%;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-top: 1px solid rgba(25, 25, 25, 0.05);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .footer-copyright {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .copyright-symbol {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+
+    /* ==========================================
+       5. GALLERY & REFLECTION STYLES
+       ========================================== */
+    .hack-reflection-section {
+      margin-top: 4rem;
+      width: 100%;
+    }
+
+    .reflection-layout {
+      display: grid;
+      grid-template-columns: 1.6fr 1.4fr;
+      gap: 3.5rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    .reflection-text-side {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .reflection-title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      /* Thinned title */
+      color: var(--color-text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .reflection-desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #444444;
+      max-width: 100%;
+    }
+
+    .reflection-image-side {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(25, 25, 25, 0.06);
+    }
+
+    .reflection-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ==========================================
+       6. RESPONSIVE MEDIA QUERIES
+       ========================================== */
+    @media (max-width: 1024px) {
+      .section-title {
+        padding-bottom: 0;
+      }
+
+      .section-title::after {
+        display: none;
+      }
+
+      .section-title .highlight-word {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.25rem;
+      }
+
+      .section-title .highlight-word::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 7px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M 0,3 Q 50,8 100,3' fill='none' stroke='%23F59E0B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .mobile-header {
+        display: flex;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 7.5rem 2rem 4rem 2rem;
+        gap: 2.2rem;
+      }
+
+      .hack-container {
+        margin-top: 0.5rem;
+      }
+
+      .hackathons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .reflection-layout {
+        gap: 2.2rem;
+      }
+
+      .hackathon-card {
+        padding: 1.8rem 1.6rem;
+        min-height: auto;
+      }
+
+      .hackathon-card.has-photo {
+        padding: 0;
+        min-height: auto;
+      }
+
+      .hackathon-photo-wrapper {
+        height: auto;
+      }
+
+      .hackathon-photo {
+        height: auto;
+        object-fit: contain;
+      }
+
+      .hackathon-card-body {
+        padding: 1.5rem 1.6rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .main-content {
+        padding: 6.5rem 1.25rem 3rem 1.25rem;
+        gap: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 2.1rem;
+      }
+
+      .hackathons-grid {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+      }
+
+      .hack-reflection-section {
+        margin-top: 2.5rem;
+      }
+
+      .reflection-title {
+        font-size: 1.3rem;
+      }
+
+      .reflection-desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .reflection-layout {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+
+      .reflection-image-side {
+        max-width: 340px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .mobile-back-btn {
+        font-size: 0.82rem;
+      }
+
+      .mobile-contacts {
+        gap: 0.4rem;
+      }
+
+      .mobile-contact-icon {
+        width: 28px;
+        height: 28px;
+      }
+
+      .mobile-contact-icon svg {
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+
+
+
+    /* ==========================================
+       6. HACKATHON DASHBOARD & GALLERY STYLES (Blue background, black progress bar, responsive)
+       ========================================== */
+    .journey-dashboard-section {
+      margin-top: 4rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+
+    .dashboard-row {
+      display: grid;
+      grid-template-columns: 1.4fr 1.6fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .dashboard-left {
+      width: 100%;
+    }
+
+    .dashboard-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .analytics-card {
+      background: #E8F1FF;
+      /* Beautiful premium blue background */
+      border: 1px solid rgba(59, 130, 246, 0.15);
+      color: #191919;
+      /* Black text */
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1.8rem;
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.05);
+      border-radius: 28px;
+    }
+
+    .analytics-card-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      /* Thinned title font */
+      color: #191919;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      padding-bottom: 0.8rem;
+      letter-spacing: -0.01em;
+    }
+
+    .analytics-bars-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      flex-grow: 1;
+    }
+
+    .analytic-bar-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .analytic-bar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .analytic-bar-label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      /* Thinned label font */
+      color: #333333;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .analytic-bar-value {
+      font-size: 1.2rem;
+      font-weight: 600;
+      /* Thinned value font */
+      color: #191919;
+    }
+
+    .analytic-bar-track {
+      width: 100%;
+      height: 8px;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .analytic-bar-fill {
+      height: 100%;
+      width: 0%;
+      /* Animated dynamically */
+      background: #191919;
+      /* Black progress bar lines */
+      border-radius: 4px;
+      transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .reflection-title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      /* Thinned title */
+      color: var(--color-text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .reflection-desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #444444;
+      max-width: 100%;
+    }
+
+    /* Gallery Row - 3 Photos in the same row */
+    .dashboard-gallery-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.2rem;
+      width: 100%;
+    }
+
+    .mobile-only-photo {
+      display: none !important;
+    }
+
+    .gallery-photo-wrapper {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(25, 25, 25, 0.06);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.005);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover animations removed from gallery wrappers */
+
+    .gallery-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    /* Hover scale removed from gallery photos */
+
+    /* Responsive overrides for Journey Dashboard */
+    @media (max-width: 1024px) {
+      .dashboard-row {
+        grid-template-columns: 1fr;
+        gap: 2.2rem;
+      }
+
+      .dashboard-gallery-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .mobile-only-photo {
+        display: block !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .journey-dashboard-section {
+        margin-top: 2.5rem;
+        gap: 2.2rem;
+      }
+
+      .dashboard-gallery-row {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .gallery-photo-wrapper {
+        aspect-ratio: 16 / 9;
+      }
+    }
+
+    /* Apply custom Nothing CMF heading font ONLY to major section titles with yellow underline */
+    .section-title {
+      font-family: var(--font-heading);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- Desktop Navigation Sidebar -->
+    <aside class="sidebar">
+      <a href="index.html" class="logo" id="logoLink">
+        <span>Viraj</span>
+        <span class="logo-last">Ravani</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html#experience">Experience</a></li>
+          <li class="nav-item"><a href="index.html#work">Projects</a></li>
+          <li class="nav-item"><a href="index.html#education">Education</a></li>
+          <li class="nav-item"><a href="index.html#about">About</a></li>
+          <li class="nav-item"><a href="certificates.html">Certificates</a></li>
+          <li class="nav-item"><a href="volunteer-work.html">Volunteer Work</a></li>
+          <li class="nav-item active"><a href="hackathons.html">Hackathons</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar contacts (LinkedIn, Email, GitHub, Phone) + Resume -->
+      <div class="sidebar-footer-container">
+        <div class="sidebar-contacts">
+          <a href="https://www.linkedin.com/in/virajravani" target="_blank" rel="noopener noreferrer"
+            class="sidebar-contact-icon" title="LinkedIn" data-track="linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="mailto:viraj.ravani@somaiya.edu" class="sidebar-contact-icon" title="Email" data-track="email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+          <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="sidebar-contact-icon"
+            title="GitHub" data-track="github">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="tel:+919137817583" class="sidebar-contact-icon" title="Call">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </a>
+        </div>
+        <a href="../assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-resume-btn" data-track="resume">Resume ↗</a>
+      </div>
+    </aside>
+
+    <!-- Mobile Header (Back link + Contact options) -->
+    <header class="mobile-header">
+      <a href="index.html" class="mobile-back-btn">← back to portfolio</a>
+      <div class="mobile-contacts">
+        <a href="https://www.linkedin.com/in/virajravani" target="_blank" rel="noopener noreferrer"
+          class="mobile-contact-icon" title="LinkedIn" data-track="linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="mailto:viraj.ravani@somaiya.edu" class="mobile-contact-icon" title="Email" data-track="email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+        <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="mobile-contact-icon"
+          title="GitHub" data-track="github">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="tel:+919137817583" class="mobile-contact-icon" title="Call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Hackathons Container -->
+      <section class="hack-container">
+        <h2 class="section-title"><span class="highlight-word">Hackathons</span> & Competitions</h2>
+
+        <div class="hackathons-grid">
+
+          <article class="hackathon-card has-photo">
+            <div class="hackathon-photo-wrapper">
+              <img src="../assets/indiaskills-gold-medal-award.webp"
+                alt="Viraj Ravani IndiaSkills Regional Mobile Application Development Gold Medal award"
+                class="hackathon-photo" loading="lazy">
+              <!-- Slanting top-right corner ribbon -->
+
+              <div class="ribbon ribbon-winner"><span>Gold Medal</span></div>
+            </div>
+            <div class="hackathon-card-body">
+              <div>
+                <div class="hackathon-meta">
+                  <span class="hackathon-date">Feb 2026</span>
+                </div>
+                <h3 class="hackathon-title">IndiaSkills Regional</h3>
+                <div class="hackathon-college">Govt. of India, NSDC</div>
+                <p class="hackathon-desc">Won the Gold Medal in Mobile Application Development at IndiaSkills, securing
+                  ₹75,000 by developing a Kotlin-based
+                  Android application focused on performance and user experience.</p>
+              </div>
+              <div class="hackathon-footer">
+                <a href="https://drive.google.com/file/d/1q7GRzzUZ9ZkgmhH8jsRuoZF7IcqeaLAX/view?usp=drive_link"
+                  class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hackathon-card has-photo">
+            <div class="hackathon-photo-wrapper">
+              <img src="../assets/techsprint-hackathon-victory.webp" alt="Viraj Ravani TechSprint Hackathon 3rd Place award"
+                class="hackathon-photo" loading="lazy">
+              <!-- Slanting top-right corner ribbon -->
+
+              <div class="ribbon ribbon-third"><span>3rd Place</span></div>
+            </div>
+            <div class="hackathon-card-body">
+              <div>
+                <div class="hackathon-meta">
+                  <span class="hackathon-date">Feb 2026</span>
+                </div>
+                <h3 class="hackathon-title">TechSprint Hackathon</h3>
+                <div class="hackathon-college">Atharva College of Engineering</div>
+                <p class="hackathon-desc">Won 2nd Runner-Up at TechSprint by building a codebase analysis tool that
+                  simplified navigation, improved code
+                  understanding, and accelerated developer onboarding.</p>
+              </div>
+              <div class="hackathon-footer">
+                <a href="https://drive.google.com/file/d/1GLa4Wfz_vq7R6ck8E79ju1l783BP-pr_/view?usp=drive_link"
+                  class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hackathon-card has-photo">
+            <div class="hackathon-photo-wrapper">
+              <img src="../assets/openverse-hackathon-certificate.webp" alt="Viraj Ravani Openverse Hackathon 2nd Place award"
+                class="hackathon-photo" loading="lazy">
+              <!-- Slanting top-right corner ribbon -->
+
+              <div class="ribbon ribbon-second"><span>2nd Place</span></div>
+            </div>
+            <div class="hackathon-card-body">
+              <div>
+                <div class="hackathon-meta">
+                  <span class="hackathon-date">Jan 2026</span>
+                </div>
+                <h3 class="hackathon-title">Openverse Hackathon</h3>
+                <div class="hackathon-college">IIIT Agartala</div>
+                <p class="hackathon-desc">Secured a winning position by developing a platform that instantly transformed
+                  a Google Maps business listing into a
+                  fully functional website, helping small businesses establish an online presence in minutes.
+                </p>
+              </div>
+              <div class="hackathon-footer">
+                <a href="https://drive.google.com/file/d/1IulD8Rc3GMtyt1QeCDA_nQIQO4kONC9d/view?usp=drive_link"
+                  class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div class="ribbon ribbon-second"><span>2nd Place</span></div>
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">Feb 2026</span>
+              </div>
+              <h3 class="hackathon-title">Hack-AI-thon</h3>
+              <div class="hackathon-college">NK Orchid CoE</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1XTet56kQZl_8GjPbWKqfqeL1tdaT8aXB/view?usp=drive_link"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div class="ribbon ribbon-top10"><span>Top 10</span></div>
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">Apr 2026</span>
+              </div>
+              <h3 class="hackathon-title">Imace Hackathon</h3>
+              <div class="hackathon-college">PESM CoE</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1cm23sio_kvBCUYypr01ke11tnF9gQvk_/view?usp=drive_link"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div class="ribbon ribbon-winner"><span>Gold Medal</span></div>
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">Feb 2026</span>
+              </div>
+              <h3 class="hackathon-title">IndiaSkills State</h3>
+              <div class="hackathon-college">Govt. of Maharashtra</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1oxfwDLSNA8hd4L5pisVasYNzdrShMeeF/view?usp=drive_link"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div class="ribbon ribbon-top20"><span>Top 20</span></div>
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">Jan 2026</span>
+              </div>
+              <h3 class="hackathon-title">Bit & Build</h3>
+              <div class="hackathon-college">GDG SOIT</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1tHU09XA2FO2FPA2FrSDVUE5CvK52blht/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div class="ribbon ribbon-top20"><span>Top 20</span></div>
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">2025</span>
+              </div>
+              <h3 class="hackathon-title">Hacksagon</h3>
+              <div class="hackathon-college">IIT-M Gwalior</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1Vrm3Vaa_MgKJu4scqXA68QITzYTfP0Wi/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">Oct 2025</span>
+              </div>
+              <h3 class="hackathon-title">Technothon</h3>
+              <div class="hackathon-college">Vivekananda Education Society Institue of Technology</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1v29O2Mw4iXAbJkCc9FOAh6wBJgv9jCkP/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">Sept 2025</span>
+              </div>
+              <h3 class="hackathon-title">Smart India Hackathon</h3>
+              <div class="hackathon-college">Somaiya Vidhyavihar University</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/13R1QOy7N_f3hF5LIVSgCs87I2WsRJH7j/view?usp=drive_link"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">Mar 2026</span>
+              </div>
+              <h3 class="hackathon-title">EurekaHacks</h3>
+              <div class="hackathon-college">Amity University, Noida</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1xYW0LmgNy7pNK1ykDyQVyUOkNyyvx-Jn/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <!-- Slanting top-right corner ribbon -->
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">2025</span>
+              </div>
+              <h3 class="hackathon-title">Byteverse 7.0</h3>
+              <div class="hackathon-college">National Institue of Technology, Patna</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1VlPx7H8fUXqtj2Bd5tDOA2ZexY9z_mTl/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">2025</span>
+              </div>
+              <h3 class="hackathon-title">DevHeat Hackathon</h3>
+              <div class="hackathon-college">IIT Surat</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/188-2mTB7v179UDaDEw9MGxKEDjpz-0Le/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">2025</span>
+              </div>
+              <h3 class="hackathon-title">Ignitathon</h3>
+              <div class="hackathon-college">RCCIIT, Kolkata</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1haKAARR2s_AUNDXCg3pGBvR5XjHR_Zbl/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <article class="hackathon-card">
+            <div>
+              <div class="hackathon-meta">
+                <span class="hackathon-date">2025</span>
+              </div>
+              <h3 class="hackathon-title">Hack4Us</h3>
+              <div class="hackathon-college">MSI, New Delhi</div>
+            </div>
+            <div class="hackathon-footer">
+              <a href="https://drive.google.com/file/d/1gW-5SF0nc886V2wIOT3aWVOJHruGsd5c/view?usp=sharing"
+                class="view-cert-link" target="_blank" rel="noopener noreferrer" data-track="viewProject">View Certificate ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Journey Dashboard, Reflections, & Gallery Section -->
+      <section class="journey-dashboard-section">
+
+        <div class="dashboard-row">
+          <!-- Left side: Analytics Card -->
+          <div class="dashboard-left">
+            <article class="hackathon-card analytics-card">
+              <h3 class="analytics-card-title">Journey Analytics</h3>
+              <div class="analytics-bars-container">
+
+                <div class="analytic-bar-row">
+                  <div class="analytic-bar-header">
+                    <span class="analytic-bar-label">Participated</span>
+                    <span class="analytic-bar-value" data-target="30" data-suffix="+">0+</span>
+                  </div>
+                  <div class="analytic-bar-track">
+                    <div class="analytic-bar-fill" data-width="100%"></div>
+                  </div>
+                </div>
+                <div class="analytic-bar-row">
+                  <div class="analytic-bar-header">
+                    <span class="analytic-bar-label">Won</span>
+                    <span class="analytic-bar-value" data-target="4" data-suffix="">0</span>
+                  </div>
+                  <div class="analytic-bar-track">
+                    <div class="analytic-bar-fill" data-width="40%"></div>
+                  </div>
+                  <div class="analytic-bar-row">
+                    <div class="analytic-bar-header">
+                      <span class="analytic-bar-label">Finalist</span>
+                      <span class="analytic-bar-value" data-target="7" data-suffix="">0</span>
+                    </div>
+                    <div class="analytic-bar-track">
+                      <div class="analytic-bar-fill" data-width="60%"></div>
+                    </div>
+                  </div>
+
+                  <div class="analytic-bar-row">
+                    <div class="analytic-bar-header">
+                      <span class="analytic-bar-label">Prize Money Won</span>
+                      <span class="analytic-bar-value" data-target="115000" data-suffix="">₹115000</span>
+                    </div>
+                    <div class="analytic-bar-track">
+                      <div class="analytic-bar-fill" data-width="90%"></div>
+                    </div>
+                  </div>
+
+
+                  <div class="analytic-bar-row">
+                    <div class="analytic-bar-header">
+                      <span class="analytic-bar-label">Volunteered</span>
+                      <span class="analytic-bar-value" data-target="2" data-suffix="">0</span>
+                    </div>
+                    <div class="analytic-bar-track">
+                      <div class="analytic-bar-fill" data-width="25%"></div>
+                    </div>
+                  </div>
+
+                </div>
+            </article>
+          </div>
+
+          <!-- Right side: Reflection Text -->
+          <div class="dashboard-right reflection-text-side">
+            <h3 class="reflection-title">Why I Hack</h3>
+            <p class="reflection-desc">
+              For me, hackathons are the perfect place to test ideas, sharpen skills, and create real impact. Give me a
+              problem, a
+              team, and a deadline that's way too short, and I'm in. I enjoy brainstorming, building from scratch,
+              debugging
+              unexpected issues, and presenting solutions that can make a difference. Every hackathon teaches me
+              something new and
+              helps me grow as both an engineer and a teammate.
+              <br>
+              <br>
+              Winning ₹1,15,000 in combined prize money has been rewarding, but the experience is what keeps me
+              coming back. I've
+              met amazing people, learned from different perspectives, and discovered that some of the best ideas come
+              under pressure.
+              It's challenging, sometimes chaotic, and usually powered by coffee, but I wouldn't have it any other way.
+
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2: 3 Photos in the same row on desktop, 4 on mobile -->
+        <div class="dashboard-gallery-row">
+          <div class="gallery-photo-wrapper">
+            <img src="../assets/hackathon-team-collaboration-1.webp" alt="" class="gallery-photo" loading="lazy">
+          </div>
+          <div class="gallery-photo-wrapper">
+            <img src="../assets/hackathon-team-collaboration-2.webp" alt="" class="gallery-photo" loading="lazy">
+          </div>
+          <div class="gallery-photo-wrapper">
+            <img src="../assets/hackathon-team-collaboration-3.webp" alt="" class="gallery-photo" loading="lazy">
+          </div>
+          <div class="gallery-photo-wrapper mobile-only-photo">
+            <img src="../assets/hackathon-volunteering-and-teamwork.webp"
+              alt="Viraj Ravani volunteering and collaborating with other developers" class="gallery-photo"
+              loading="lazy">
+          </div>
+
+
+      </section>
+
+      <!-- Footer Copyright -->
+      <footer class="footer">
+        <p class="footer-copyright">
+          <span class="copyright-symbol">&copy;</span>
+          <span>2026 Viraj Ravani. All rights reserved.</span>
+        </p>
+      </footer>
+
+    </main>
+
+  </div>
+
+
+  <script>
+    // ==========================================
+    // HACKATHON ANALYTICS COUNT-UP ANIMATION
+    // ==========================================
+    const analyticsCard = document.querySelector('.analytics-card');
+
+    if (analyticsCard) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounts();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      observer.observe(analyticsCard);
+    }
+
+    function animateCounts() {
+      // 1. Animate text numbers count-up
+      const items = document.querySelectorAll('.analytic-bar-value');
+      items.forEach(item => {
+        const target = parseInt(item.getAttribute('data-target'));
+        const suffix = item.getAttribute('data-suffix') || '';
+
+        const duration = 1200; // Animation duration in milliseconds
+        const adjustedStep = 20; // Time frame step in milliseconds
+        const stepsCount = duration / adjustedStep;
+        const increment = target / stepsCount;
+
+        let current = 0;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            item.textContent = target + suffix;
+            clearInterval(timer);
+          } else {
+            item.textContent = Math.floor(current) + suffix;
+          }
+        }, adjustedStep);
+      });
+
+      // 2. Animate bar widths expansion with browser reflow trigger to guarantee transition plays
+      const bars = document.querySelectorAll('.analytic-bar-fill');
+      bars.forEach(bar => {
+        const targetWidth = bar.getAttribute('data-width');
+        bar.style.width = '0%'; // Explicitly reset to 0% first
+        bar.offsetWidth; // Force a browser reflow to apply the reset
+        bar.style.width = targetWidth; // Set the target width to trigger CSS transition
+      });
+    }
+  </script>
+  <script type="module" src="../analytics/analytics.js" defer></script>
+</body>

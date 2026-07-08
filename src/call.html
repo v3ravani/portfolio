@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opening Dialer...</title>
+  <script>
+    // Prevent redirect history deadlock loop
+    if (sessionStorage.getItem('redirected_phone')) {
+      sessionStorage.removeItem('redirected_phone');
+      window.location.replace('index.html');
+    } else {
+      sessionStorage.setItem('redirected_phone', 'true');
+      window.location.replace('tel:+919137817583');
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to dialer... If it doesn't open, <a href="tel:+919137817583">click here to call</a>.</p>
+</body>
+</html>

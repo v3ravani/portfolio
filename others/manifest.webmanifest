@@ -1,0 +1,19 @@
+{
+  "name": "Viraj Ravani Portfolio",
+  "short_name": "Viraj Ravani",
+  "description": "Explore the portfolio of Viraj Ravani, showcasing software projects, technical expertise, achievements, and a passion for building impactful digital experiences.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FBFBFA",
+  "theme_color": "#191919",
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "../assets/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

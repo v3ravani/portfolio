@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Viraj Ravani</title>
+  <meta name="description"
+    content="Explore opportunities to connect for internships, collaborations, software projects, freelance work, and professional networking.">
+  <meta name="keywords"
+    content="Contact Viraj Ravani, Hire Software Developer, Software Engineer, Full Stack Developer, Web Developer, Internship, Freelance Developer, Collaboration, Portfolio">
+  <link rel="canonical" href="https://www.virajravani.in/contact.html">
+  <link rel="manifest" href="../others/manifest.webmanifest">
+  <link rel="icon" type="image/jpeg" href="../assets/logo.jpg">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.virajravani.in/contact.html">
+  <meta property="og:title" content="Contact | Viraj Ravani">
+  <meta property="og:description"
+    content="Explore opportunities to connect for internships, collaborations, software projects, freelance work, and professional networking.">
+  <meta property="og:image"
+    content="https://www.virajravani.in/portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-banner.webp">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.virajravani.in/contact.html">
+  <meta property="twitter:title" content="Contact | Viraj Ravani">
+  <meta property="twitter:description"
+    content="Explore opportunities to connect for internships, collaborations, software projects, freelance work, and professional networking.">
+  <meta property="twitter:image"
+    content="https://www.virajravani.in/portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-banner.webp">
+
+  <!-- Crawling and indexing meta tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Performance Prefetching -->
+  <link rel="prefetch" href="index.html">
+  <link rel="prefetch" href="projects.html">
+  <link rel="prefetch" href="certificates.html">
+  <link rel="prefetch" href="hackathons.html">
+  <link rel="prefetch" href="volunteer-work.html">
+  <link rel="prefetch" href="resume.html">
+
+  <!-- AI Search & Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Contact | Viraj Ravani",
+    "description": "Explore opportunities to connect for internships, collaborations, software projects, freelance work, and professional networking.",
+    "url": "https://www.virajravani.in/contact.html"
+  }
+  </script>
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --font-primary: 'Plus Jakarta Sans', sans-serif;
+      --transition-smooth: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html,
+    body {
+      background-color: #f3f3f2;
+      /* Subtle light background to make white card pop */
+      color: #191919;
+      font-family: var(--font-primary);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      display: flex;
+      flex-direction: column;
+      /* Centered card and bottom hint vertically stacked */
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* 3D Perspective Container */
+    .card-perspective {
+      perspective: 1500px;
+      width: 420px;
+      max-width: 89%;
+      /* Set width to approx 89% of screen on mobile viewports for proper margin spacing */
+      margin: 0 auto;
+    }
+
+    /* Contact Card Wrapper - acts as the 3D flipper */
+    .contact-card {
+      background-color: transparent;
+      width: 100%;
+      height: 500px;
+      /* Sleek fixed height for desktop - adjusted for 3 buttons */
+      border-radius: 32px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      /* Premium spring flip animation */
+      box-shadow: none;
+      border: none;
+      cursor: grab;
+      touch-action: none;
+      /* Prevent browser scroll/swipe gesture takeover */
+    }
+
+    .contact-card:active {
+      cursor: grabbing;
+    }
+
+    /* State when flipped */
+    .contact-card.is-flipped {
+      transform: rotateY(180deg);
+    }
+
+    /* Common Card Face Styles */
+    .card-face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 32px;
+      background-color: #ffffff;
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      border: 1px solid rgba(25, 25, 25, 0.04);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      touch-action: none;
+      /* Prevent scroll/swipe hijacking */
+    }
+
+    /* Front Face */
+    .card-face-front {
+      z-index: 2;
+      transform: rotateY(0deg);
+    }
+
+    /* Back Face */
+    .card-face-back {
+      transform: rotateY(180deg);
+      z-index: 1;
+      padding: 32px 28px;
+      justify-content: space-between;
+    }
+
+    /* Prevent dragging of images */
+    .banner-img,
+    .profile-pic,
+    .back-avatar {
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    /* Banner Section */
+    .card-header {
+      position: relative;
+      height: 160px;
+      /* Sleeker banner height on desktop */
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+    /* Card Body Section for Front Face content distribution */
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 0 24px 20px 24px;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Profile Section */
+    .profile-container {
+      display: flex;
+      align-items: flex-end;
+      /* Align profile info with bottom half of avatar */
+      gap: 16px;
+    }
+
+    .profile-pic-wrapper {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      background-color: #ffffff;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: -45px;
+      /* Pulls only the avatar over the banner */
+    }
+
+    .profile-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
+      /* Align clean without magic margins */
+      margin-bottom: 4px;
+    }
+
+    .profile-name {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #191919;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+
+    .profile-tagline {
+      font-size: 0.92rem;
+      color: #757575;
+      margin-top: 2px;
+      font-weight: 500;
+    }
+
+    /* Pill Buttons */
+    .buttons-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      /* Tighter gap for better vertical rhythm */
+      width: 100%;
+    }
+
+    .pill-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      /* Sleeker height */
+      border-radius: 100px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(25, 25, 25, 0.05);
+      cursor: pointer;
+      color: #191919;
+      background-color: rgba(25, 25, 25, 0.03);
+      box-shadow: none;
+      touch-action: none;
+      /* Block browser touch gestures on button level */
+      -webkit-user-drag: none;
+      /* Prevent link dragging ghost images */
+      user-select: none;
+    }
+
+    .pill-btn:hover {
+      background-color: rgba(25, 25, 25, 0.07);
+      border-color: rgba(25, 25, 25, 0.12);
+      transform: translateY(-1.5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03);
+    }
+
+    .pill-btn:active {
+      transform: translateY(0);
+    }
+
+    /* Connect Pill and Balls (Matched to index.html style) */
+    .connect-pill-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .connect-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(25, 25, 25, 0.03);
+      border: 1px solid rgba(25, 25, 25, 0.05);
+      border-radius: 100px;
+      padding: 6px 8px;
+      width: 100%;
+      max-width: 280px;
+      position: relative;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    .connect-ball {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02);
+      transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.2s ease;
+      text-decoration: none;
+      cursor: pointer;
+      touch-action: none;
+      /* Block browser touch gestures on socials level */
+      -webkit-user-drag: none;
+      /* Prevent dragging link element */
+      user-select: none;
+    }
+
+    .connect-ball:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .connect-ball:active {
+      transform: scale(0.98);
+    }
+
+    .connect-ball svg {
+      width: 22px;
+      height: 22px;
+      transition: transform 0.3s ease;
+    }
+
+    .connect-ball[data-action="linkedin"] svg {
+      color: #0077b5;
+    }
+
+    .connect-ball[data-action="email"] svg {
+      color: #ea4335;
+    }
+
+    .connect-ball[data-action="github"] svg {
+      color: #181717;
+    }
+
+    .connect-ball[data-action="phone"] svg {
+      color: #166534;
+    }
+
+    /* ==========================================
+       Back Face Styling (Summary Face)
+       ========================================== */
+    .back-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 6px;
+    }
+
+    .back-avatar-wrapper {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid rgba(25, 25, 25, 0.08);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(25, 25, 25, 0.02);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .back-avatar {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back-title-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .back-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #191919;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .back-subtitle {
+      font-size: 0.82rem;
+      color: #757575;
+      font-weight: 500;
+      margin-top: 1px;
+    }
+
+    .back-divider {
+      height: 1px;
+      background-color: rgba(25, 25, 25, 0.06);
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .back-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #0066cc;
+      /* Section headings in clean brand blue */
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .summary-item {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .summary-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .summary-text strong {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #191919;
+      line-height: 1.3;
+    }
+
+    .summary-text span {
+      font-size: 0.78rem;
+      color: #757575;
+      font-weight: 500;
+      margin-top: 1px;
+    }
+
+    .skills-list {
+      font-size: 0.82rem;
+      line-height: 1.4;
+      color: #4a4a4a;
+      font-weight: 500;
+    }
+
+    /* Swipe hint text below the card */
+    .swipe-hint-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 18px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .swipe-hint {
+      font-size: 0.88rem;
+      color: #757575;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      opacity: 0.8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      animation: pulseHint 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseHint {
+
+      0%,
+      100% {
+        opacity: 0.5;
+        transform: translateY(0);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
+    }
+
+    /* Mobile Responsive Optimizations */
+    @media (max-width: 480px) {
+
+      html,
+      body {
+        overflow: hidden;
+        /* Prevent all page scrolling/rubber-banding on mobile */
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+
+      .contact-card {
+        height: 480px;
+        /* Slightly taller on mobile for 3 buttons & back face space */
+      }
+
+      .card-header {
+        height: 130px;
+        /* Reduce banner height on mobile */
+      }
+
+      .card-body {
+        padding: 0 16px 16px 16px;
+        margin-top: 0;
+        /* Rely on avatar-specific margin-top pullup */
+      }
+
+      .profile-pic-wrapper {
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+        /* Pull avatar into banner on mobile */
+      }
+
+      .profile-info {
+        margin-top: 0;
+        margin-bottom: 2px;
+      }
+
+      .profile-name {
+        font-size: 1.3rem;
+      }
+
+      .pill-btn {
+        height: 46px;
+        /* Sleeker button height on mobile */
+        font-size: 0.9rem;
+      }
+
+      .connect-ball {
+        width: 46px;
+        height: 46px;
+      }
+
+      .connect-ball svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Back Face mobile styling */
+      .card-face-back {
+        padding: 24px 20px;
+      }
+
+      .back-header {
+        gap: 12px;
+        margin-bottom: 4px;
+      }
+
+      .back-avatar-wrapper {
+        width: 40px;
+        height: 40px;
+      }
+
+      .back-title {
+        font-size: 1.1rem;
+      }
+
+      .back-subtitle {
+        font-size: 0.8rem;
+      }
+
+      .back-divider {
+        margin: 8px 0;
+      }
+
+      .back-bio {
+        font-size: 0.84rem;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+
+      .back-section {
+        margin-bottom: 8px;
+        gap: 4px;
+      }
+
+      .section-title {
+        font-size: 0.72rem;
+      }
+
+      .summary-text strong {
+        font-size: 0.82rem;
+      }
+
+      .summary-text span {
+        font-size: 0.74rem;
+      }
+
+      .skills-list {
+        font-size: 0.78rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card-perspective">
+    <div class="contact-card" id="contactCard">
+
+      <!-- FRONT FACE -->
+      <div class="card-face card-face-front">
+        <!-- Banner Header using whatsapp-chat-analyzer.webp (project image) -->
+        <div class="card-header">
+          <img class="banner-img" src="../assets/banner.jpg"
+            alt="Viraj Ravani software engineering portfolio profile banner backdrop" loading="eager" decoding="async"
+            fetchpriority="high">
+        </div>
+
+        <div class="card-body">
+          <!-- Profile Section using somaiya-vidyavihar-university-logo.webp (school logo) -->
+          <div class="profile-container">
+            <div class="profile-pic-wrapper">
+              <img class="profile-pic" src="../assets/VirajRavani.jpg"
+                alt="Viraj Ravani software engineer profile avatar portrait photo" loading="eager" decoding="async"
+                fetchpriority="high" width="90" height="90">
+            </div>
+            <div class="profile-info">
+              <h1 class="profile-name">Viraj Ravani</h1>
+              <p class="profile-tagline">Ideate &middot; Build &middot; Ship</p>
+            </div>
+          </div>
+
+          <!-- 3 Buttons: View Portfolio, View Projects & Resume -->
+          <div class="buttons-list">
+            <a href="index.html" class="pill-btn">View Portfolio</a>
+            <a href="projects.html" class="pill-btn">View Projects</a>
+            <a href="../assets/resume.pdf" target="_blank" class="pill-btn" data-track="resume">Resume &nearr;</a>
+          </div>
+
+          <!-- 4 Connect Balls inside the connect pill -->
+          <div class="connect-pill-wrapper">
+            <div class="connect-pill">
+              <!-- LinkedIn -->
+              <a href="linkedin.html" class="connect-ball" data-action="linkedin" title="LinkedIn" data-track="linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <!-- GitHub -->
+              <a href="github.html" class="connect-ball" data-action="github" title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+              <!-- Email -->
+              <a href="email.html" class="connect-ball" data-action="email" title="Email" data-track="email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+              <!-- Phone/Call -->
+              <a href="phone.html" class="connect-ball" data-action="phone" title="Call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACK FACE (Summary) -->
+      <div class="card-face card-face-back">
+        <!-- Header -->
+        <div class="back-header">
+          <div class="back-avatar-wrapper">
+            <img class="back-avatar" src="../assets/VirajRavani.jpg"
+              alt="Viraj Ravani software engineering back-face profile avatar" loading="lazy" decoding="async"
+              width="48" height="48">
+          </div>
+          <div class="back-title-group">
+            <h2 class="back-title">About Viraj</h2>
+            <p class="back-subtitle">Coder &middot; Designer &middot; Builder</p>
+          </div>
+        </div>
+
+        <div class="back-divider"></div>
+
+        <!-- Experience (2) -->
+        <div class="back-section">
+          <h3 class="section-title">Experience</h3>
+          <div class="summary-item">
+            <div class="summary-text">
+              <strong>Software Engineering Intern</strong>
+              <span>Cloud 9 Infosystems, Inc.</span>
+            </div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-text">
+              <strong>Database Engineering Intern</strong>
+              <span>Transcon Freight Systems Pvt Ltd.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="back-section">
+          <h3 class="section-title">Skills</h3>
+          <p class="skills-list">
+            Software Engineering &middot; Mobile App Dev &middot; Database Engineering &middot; Generative AI &middot;
+            Product Design &middot; UI/UX
+          </p>
+        </div>
+
+        <!-- Education (1) -->
+        <div class="back-section">
+          <h3 class="section-title">Education</h3>
+          <div class="summary-item">
+            <div class="summary-text">
+              <strong>Diploma in Computer Engineering</strong>
+              <span>Somaiya Vidyavihar University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="back-section">
+          <h3 class="section-title">Achievements</h3>
+          <div class="summary-item">
+            <div class="summary-text">
+              <strong>IndiaSkills Gold Medalist</strong>
+              <span>Mobile Application Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Swipe Hint text below the card -->
+  <div class="swipe-hint-container">
+    <span class="swipe-hint" id="swipeHint">Swipe to view more &harr;</span>
+  </div>
+
+  <script>
+    // Flipper Logic
+    const card = document.getElementById('contactCard');
+    const hint = document.getElementById('swipeHint');
+
+    let startX = 0;
+    let isDragging = false;
+    let hasMoved = false; // Drag movement tracker to prevent click trigger
+    let swipeThreshold = 55; // pixels to trigger flip
+    let clickThreshold = 7; // movement threshold in pixels to count as drag instead of click
+
+    // Touch Event Listeners
+    card.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+      hasMoved = false;
+    }, { passive: true });
+
+    card.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+
+      const currentX = e.touches[0].clientX;
+      const diffX = currentX - startX;
+
+      if (Math.abs(diffX) > clickThreshold) {
+        hasMoved = true;
+      }
+
+      // Prevent browser default scrolling behavior during flip swipe
+      if (e.cancelable) {
+        e.preventDefault();
+      }
+
+      // Provide dynamic rotation preview feedback based on drag distance
+      const baseRot = card.classList.contains('is-flipped') ? 180 : 0;
+      const rotY = baseRot + (diffX * 0.12);
+      card.style.transform = `rotateY(${rotY}deg)`;
+    }, { passive: false });
+
+    card.addEventListener('touchend', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      const endX = e.changedTouches[0].clientX;
+      const diffX = endX - startX;
+
+      card.style.transform = ''; // Clear inline styles to restore transition class defaults
+
+      if (Math.abs(diffX) > swipeThreshold) {
+        toggleCardFlip();
+      }
+    });
+
+    card.addEventListener('touchcancel', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      card.style.transform = '';
+    });
+
+    // Desktop Mouse Drag Swipe Support
+    card.addEventListener('mousedown', (e) => {
+      startX = e.clientX;
+      isDragging = true;
+      hasMoved = false;
+      card.style.transition = 'none'; // Temporarily disable transitions during desktop dragging
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const currentX = e.clientX;
+      const diffX = currentX - startX;
+
+      if (Math.abs(diffX) > clickThreshold) {
+        hasMoved = true;
+      }
+
+      const baseRot = card.classList.contains('is-flipped') ? 180 : 0;
+      card.style.transform = `rotateY(${baseRot + (diffX * 0.12)}deg)`;
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      card.style.transition = ''; // Restore transitions
+      const endX = e.clientX;
+      const diffX = endX - startX;
+
+      card.style.transform = '';
+
+      if (Math.abs(diffX) > swipeThreshold) {
+        toggleCardFlip();
+      }
+    });
+
+    // Capturing click listener to prevent link navigation/taps if dragging occurred
+    card.addEventListener('click', (e) => {
+      if (hasMoved) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }, true); // true sets the listener in the capture phase
+
+    // Helper Function to Flip Card
+    function toggleCardFlip() {
+      card.classList.toggle('is-flipped');
+      if (card.classList.contains('is-flipped')) {
+        hint.innerHTML = 'Swipe to view contact details &harr;';
+      } else {
+        hint.innerHTML = 'Swipe to view more &harr;';
+      }
+    }
+  </script>
+
+  <script type="module" src="../analytics/analytics.js" defer></script>
+</body>
+
+</html>

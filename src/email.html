@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opening Email client...</title>
+  <script>
+    // Prevent redirect history deadlock loop
+    if (sessionStorage.getItem('redirected_email')) {
+      sessionStorage.removeItem('redirected_email');
+      window.location.replace('index.html');
+    } else {
+      sessionStorage.setItem('redirected_email', 'true');
+      window.location.replace('mailto:viraj.ravani@somaiya.edu');
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to email client... If it doesn't open, <a href="mailto:viraj.ravani@somaiya.edu">click here to write email</a>.</p>
+</body>
+</html>

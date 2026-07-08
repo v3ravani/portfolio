@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Viraj Ravani</title>
+  <meta name="description"
+    content="Explore a collection of full stack applications, innovative software, and real world solutions built with modern technologies and clean engineering.">
+  <meta name="keywords"
+    content="Viraj Ravani Projects, Software Projects, Full Stack Projects, Web Development, Software Engineering, HTML, CSS, JavaScript, TypeScript, Python, C++, Kotlin, SQL, PostgreSQL, Cloud Computing, GitHub, Engineering">
+  <link rel="canonical" href="https://www.virajravani.in/projects.html">
+  <link rel="manifest" href="../others/manifest.webmanifest">
+  <link rel="icon" type="image/jpeg" href="../assets/logo.jpg">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.virajravani.in/projects.html">
+  <meta property="og:title" content="Projects | Viraj Ravani">
+  <meta property="og:description" content="Explore a collection of full stack applications, innovative software, and real world solutions built with modern technologies and clean engineering.">
+  <meta property="og:image" content="https://www.virajravani.in/portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-banner.webp">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.virajravani.in/projects.html">
+  <meta property="twitter:title" content="Projects | Viraj Ravani">
+  <meta property="twitter:description" content="Explore a collection of full stack applications, innovative software, and real world solutions built with modern technologies and clean engineering.">
+  <meta property="twitter:image" content="https://www.virajravani.in/portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-portfolio-profile-header-banner.webp">
+
+  <!-- Crawling and indexing meta tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Preload critical asset if needed -->
+  <link rel="preload" href="../assets/asset_bg_01.webp" as="image" type="image/webp">
+
+  <!-- AI Search & Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viraj Ravani",
+    "url": "https://www.virajravani.in",
+    "jobTitle": "Product Designer & Software Engineer",
+    "knowsAbout": ["Product Design", "Software Engineering", "Mobile App Development", "UI/UX", "Generative AI", "Database Engineering"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Somaiya Vidyavihar University"
+    },
+    "award": [
+      "Gold Medalist in Mobile Application Development at IndiaSkills State & Regionals",
+      "IIT-A Hackathon Winner",
+      "3x State Level Hackathons Winner"
+    ]
+  }
+  </script>
+  <!-- Performance Prefetching -->
+  <link rel="prefetch" href="index.html">
+  <link rel="prefetch" href="certificates.html">
+  <link rel="prefetch" href="hackathons.html">
+  <link rel="prefetch" href="volunteer-work.html">
+  <link rel="prefetch" href="contact.html">
+  <link rel="prefetch" href="resume.html">
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================
+       1. DESIGN SYSTEM & VARIABLES
+       ========================================== */
+    @font-face {
+      font-family: 'NType82';
+      src: url('../../fonts/NType82-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    
+    :root {
+      --font-heading: 'NType82', var(--font-primary, sans-serif);
+      --font-primary: 'Plus Jakarta Sans', sans-serif;
+      --font-signature: 'Caveat', cursive;
+
+      --color-bg: #FBFBFA;
+      --color-text-primary: #191919;
+      --color-text-muted: #757575;
+
+      --sidebar-width: 280px;
+      --transition-smooth: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+      font-family: var(--font-primary);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-smooth);
+    }
+
+    /* ==========================================
+       2. LAYOUT STRUCTURE & NAVIGATION
+       ========================================== */
+    .app-container {
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Desktop Navigation Sidebar */
+    .sidebar {
+      width: var(--sidebar-width);
+      padding: 4rem 2rem 4rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: 90;
+      background-color: #ffffff;
+      border-right: 1px solid #eeeeee;
+    }
+
+    .logo {
+      font-family: var(--font-signature);
+      font-size: 2em;
+      font-weight: 700;
+      line-height: 0.82;
+      color: var(--color-text-primary);
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      transform: rotate(-3deg);
+      width: fit-content;
+    }
+
+    .logo-last {
+      margin-left: 0.6rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    .nav-item a {
+      font-size: 0.95em;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      display: inline-block;
+      padding: 0.2rem 0;
+    }
+
+    .nav-item a:hover {
+      color: var(--color-text-primary);
+      transform: translateX(3px);
+    }
+
+    .nav-item.active a {
+      color: var(--color-text-primary);
+      font-weight: 700;
+      transform: translateX(3px);
+    }
+
+    /* Desktop Left Tab Sidebar Contacts & Footer */
+    .sidebar-footer-container {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+    }
+
+    .sidebar-contacts {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .sidebar-contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background-color: rgba(25, 25, 25, 0.04);
+      color: var(--color-text-primary);
+      border-radius: 50%;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .sidebar-contact-icon:hover {
+      background-color: rgba(25, 25, 25, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .sidebar-contact-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .sidebar-resume-btn {
+      font-size: 0.9em;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      background-color: transparent;
+      border: 1px solid rgba(25, 25, 25, 0.08);
+      padding: 0.6rem 1rem;
+      border-radius: 100px;
+      text-align: center;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .sidebar-resume-btn:hover {
+      background-color: rgba(25, 25, 25, 0.03);
+      border-color: rgba(25, 25, 25, 0.15);
+    }
+
+    /* Main Content Area */
+    .main-content {
+      margin-left: var(--sidebar-width);
+      flex-grow: 1;
+      padding: 5rem 6rem 5rem 3rem;
+      max-width: 1240px;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: flex-start;
+      animation: pageFadeIn 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    @keyframes pageFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive scaling for desktop content area */
+    @media (min-width: 1025px) {
+      html {
+        font-size: 105%;
+      }
+
+      .sidebar {
+        font-size: 95.2%;
+      }
+
+      body {
+        background: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, rgba(59, 130, 246, 0) 12rem), var(--color-bg);
+      }
+    }
+
+    /* Mobile Header (Back link + Contact options) */
+    .mobile-header {
+      display: none;
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      width: auto;
+      height: 60px;
+      background: rgba(240, 240, 240, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(25, 25, 25, 0.05);
+      border-radius: 100px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+      z-index: 110;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.4rem;
+    }
+
+    .mobile-back-btn {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .mobile-contacts {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .mobile-contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background-color: rgba(25, 25, 25, 0.04);
+      color: var(--color-text-primary);
+      border-radius: 50%;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .mobile-contact-icon:active {
+      background-color: rgba(25, 25, 25, 0.08);
+      transform: scale(0.95);
+    }
+
+    .mobile-contact-icon svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* ==========================================
+       3. SECTION TITLE (Matches Home Page)
+       ========================================== */
+    .section-title {
+      font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+      font-weight: 500;
+      color: var(--color-text-primary);
+      margin-bottom: 1.8rem;
+      letter-spacing: -0.03em;
+      position: relative;
+      width: fit-content;
+      padding-bottom: 0.25rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 7px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M 0,3 Q 50,8 100,3' fill='none' stroke='%23F59E0B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    /* ==========================================
+       4. CATEGORY FILTER SYSTEM
+       ========================================== */
+    .filter-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+      margin-bottom: 0.4rem;
+      /* Reduced gap under filters on desktop */
+      width: 100%;
+    }
+
+    .filter-btn {
+      background-color: transparent;
+      border: 1px solid rgba(25, 25, 25, 0.08);
+      color: var(--color-text-muted);
+      padding: 0.6rem 1.4rem;
+      border-radius: 100px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: var(--font-primary);
+      transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+    }
+
+    .filter-btn:hover {
+      background-color: rgba(25, 25, 25, 0.03);
+      color: var(--color-text-primary);
+    }
+
+    .filter-btn.active {
+      background-color: var(--color-text-primary);
+      border-color: var(--color-text-primary);
+      color: #ffffff;
+    }
+
+    /* ==========================================
+       5. PROJECTS GRID & NO IMAGE CARD STYLES
+       ========================================== */
+    .projects-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.2rem;
+      width: 100%;
+    }
+
+    .project-card {
+      background: linear-gradient(180deg, rgba(240, 246, 255, 0.43) 0%, #ffffff 100%);
+      border: 1px solid rgba(25, 25, 25, 0.06);
+      border-radius: 28px;
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 290px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.008);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #8B5CF6;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background-color: rgba(139, 92, 246, 0.08);
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+    }
+
+    .project-title {
+      font-size: 1.28rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      line-height: 1.35;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.02em;
+    }
+
+    .project-desc {
+      font-size: 0.94rem;
+      line-height: 1.52;
+      font-weight: 400;
+      color: var(--color-text-muted);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .project-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    .view-project-link {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: gap 0.2s ease, opacity 0.2s ease;
+    }
+
+    .view-project-link:hover {
+      gap: 0.4rem;
+      opacity: 0.8;
+    }
+
+    .github-icon-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: rgba(25, 25, 25, 0.04);
+      color: var(--color-text-primary);
+      border-radius: 50%;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .github-icon-link:hover {
+      background-color: rgba(25, 25, 25, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .github-icon-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ==========================================
+       6. FOOTER STYLES
+       ========================================== */
+    .footer {
+      width: 100%;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-top: 1px solid rgba(25, 25, 25, 0.05);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .footer-copyright {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .copyright-symbol {
+      color: #8B5CF6;
+      font-weight: 700;
+    }
+
+    /* ==========================================
+       7. RESPONSIVE MEDIA QUERIES
+       ========================================== */
+    @media (max-width: 1024px) {
+      .sidebar {
+        display: none;
+      }
+
+      .mobile-header {
+        display: flex;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 7.5rem 2rem 4rem 2rem;
+        gap: 2.2rem;
+      }
+
+      .projects-container {
+        margin-top: 0.5rem;
+        gap: 1.0rem;
+        /* Reduced gap between elements on mobile */
+      }
+
+      .filter-container {
+        margin-top: 0.6rem;
+        margin-bottom: -0.2rem;
+        /* Reduced gap under filters on mobile/tablet */
+      }
+
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .main-content {
+        padding: 6.5rem 1.25rem 3rem 1.25rem;
+        gap: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 2.1rem;
+      }
+
+      .filter-container {
+        margin-top: 0.4rem;
+        margin-bottom: -0.2rem;
+        /* Tighter gap under filters on smaller devices */
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+      }
+
+      .ask-ai-toast {
+        width: calc(100% - 2.5rem);
+        max-width: 420px;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.88rem;
+        bottom: 2rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .mobile-back-btn {
+        font-size: 0.82rem;
+      }
+
+      .mobile-contacts {
+        gap: 0.4rem;
+      }
+
+      .mobile-contact-icon {
+        width: 28px;
+        height: 28px;
+      }
+
+      .mobile-contact-icon svg {
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    /* Toast Notification for Building Phase */
+    .ask-ai-toast {
+      position: fixed;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translate(-50%, 100px);
+      background: rgba(25, 25, 25, 0.75); /* Translucent dark background */
+      color: #ffffff;
+      padding: 0.9rem 1.8rem;
+      border-radius: 50px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 5px 15px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 100000; /* Higher z-index to stay above other elements */
+      pointer-events: none;
+    }
+
+    .ask-ai-toast.show {
+      transform: translate(-50%, 0);
+      opacity: 1;
+      visibility: visible;
+    }
+    /* Apply custom Nothing CMF heading font ONLY to major section titles with yellow underline */
+    .section-title {
+      font-family: var(--font-heading);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- Desktop Navigation Sidebar -->
+    <aside class="sidebar">
+      <a href="index.html" class="logo" id="logoLink">
+        <span>Viraj</span>
+        <span class="logo-last">Ravani</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html#experience">Experience</a></li>
+          <li class="nav-item active"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="index.html#education">Education</a></li>
+          <li class="nav-item"><a href="index.html#about">About</a></li>
+          <li class="nav-item"><a href="certificates.html">Certificates</a></li>
+          <li class="nav-item"><a href="volunteer-work.html">Volunteer Work</a></li>
+          <li class="nav-item"><a href="hackathons.html">Hackathons</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar contacts + Resume -->
+      <div class="sidebar-footer-container">
+        <div class="sidebar-contacts">
+          <a href="https://www.linkedin.com/in/virajravani" target="_blank" rel="noopener noreferrer"
+            class="sidebar-contact-icon" title="LinkedIn" data-track="linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="mailto:viraj.ravani@somaiya.edu" class="sidebar-contact-icon" title="Email" data-track="email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+          <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="sidebar-contact-icon"
+            title="GitHub" data-track="github">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="tel:+919137817583" class="sidebar-contact-icon" title="Call">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </a>
+        </div>
+        <a href="../assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-resume-btn" data-track="resume">Resume ↗</a>
+      </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <a href="index.html" class="mobile-back-btn">← back to portfolio</a>
+      <div class="mobile-contacts">
+        <a href="https://www.linkedin.com/in/virajravani" target="_blank" rel="noopener noreferrer"
+          class="mobile-contact-icon" title="LinkedIn" data-track="linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="mailto:viraj.ravani@somaiya.edu" class="mobile-contact-icon" title="Email" data-track="email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+        <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="mobile-contact-icon"
+          title="GitHub" data-track="github">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="tel:+919137817583" class="mobile-contact-icon" title="Call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Projects Container -->
+      <section class="projects-container">
+        <h2 class="section-title">Projects</h2>
+
+        <!-- Category Filter Bar -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mobile-app">Mobile App</button>
+          <button class="filter-btn" data-filter="webapp">Webapp</button>
+          <button class="filter-btn" data-filter="website">Website</button>
+          <button class="filter-btn" data-filter="extention">Extention</button>
+          <button class="filter-btn" data-filter="iot-embedded">IoT/Embedded</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- ==========================================
+             CATEGORY: MOBILE APP (3 Projects)
+             ========================================== -->
+          <article class="project-card" data-category="mobile-app">
+            <div class="project-card-header">
+              <span class="project-tag">Mobile App</span>
+            </div>
+            <h3 class="project-title">Safr - Women’s Safety &amp; Trip Monitoring</h3>
+            <p class="project-desc">A Flutter &amp; Dart app built to protect women on the move. Offers Walk With Me
+              journey tracking, fake call simulator, loud alarms, and quick SOS alert broadcast via Firebase backend
+              integration.</p>
+            <div class="project-actions">
+              <a href="https://www.indusappstore.com/apps/travel-and-local/safr-/com.safr1.app?page=details&id=com.safr1.app"
+                target="_blank" rel="noopener noreferrer" class="view-project-link" data-track="viewProject">View App →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="mobile-app">
+            <div class="project-card-header">
+              <span class="project-tag">Mobile App</span>
+            </div>
+            <h3 class="project-title">NutriWise - Food Nutrition Scanner</h3>
+            <p class="project-desc">A Flutter-powered mobile app that scans food barcodes to instantly fetch ingredient
+              and nutrition details via API integration. Highlights key health indicators using smart visual warnings.
+            </p>
+            <div class="project-actions">
+              <a href="https://www.indusappstore.com/apps/health-and-fitness/nutriwise/com.viraj.nutriwise?page=details&id=com.viraj.nutriwise"
+                target="_blank" rel="noopener noreferrer" class="view-project-link" data-track="viewProject">View App →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="mobile-app">
+            <div class="project-card-header">
+              <span class="project-tag">Mobile App</span>
+            </div>
+            <h3 class="project-title">FitTrack - Personal Workout Companion</h3>
+            <p class="project-desc">An Android application built with Kotlin and Jetpack Compose featuring offline-first
+              capabilities. Users can customize workout plans, track exercise progress, and view local fitness
+              analytics.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- ==========================================
+             CATEGORY: WEBAPP (3 Projects)
+             ========================================== -->
+          <article class="project-card" data-category="webapp">
+            <div class="project-card-header">
+              <span class="project-tag">Webapp</span>
+            </div>
+            <h3 class="project-title">Campus Confession - Anonymous Chat</h3>
+            <p class="project-desc">A React-powered social platform utilizing Socket.io for anonymous, real-time message
+              boards and chat rooms tailored for college students, integrated with content moderation filters.</p>
+            <div class="project-actions">
+              <a href="https://www.linkedin.com/posts/virajravani_flutter-firebase-appdevelopment-activity-7305582729935360001-X-6X?utm_source=share&utm_medium=member_android&rcm=ACoAAEh_K_gBXQl7duqaLyJdxRKk3tJ6_eDLrbA"
+                target="_blank" rel="noopener noreferrer" class="view-project-link" data-track="linkedin">View Post →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="webapp">
+            <div class="project-card-header">
+              <span class="project-tag">Webapp</span>
+            </div>
+            <h3 class="project-title">WhatsApp Chat Analyzer - NLP &amp; Data Visualization Tool</h3>
+            <p class="project-desc">A Python-based analytics tool that processes exported WhatsApp chats to uncover
+              patterns in communication. </p>
+            <div class="project-actions">
+              <a href="https://github.com/v3ravani/Whatsapp-Chat-Analyzer" target="_blank" rel="noopener noreferrer"
+                class="view-project-link" data-track="viewProject">View Repository →</a>
+              <a href="https://github.com/v3ravani/Whatsapp-Chat-Analyzer" target="_blank" rel="noopener noreferrer"
+                class="github-icon-link" title="GitHub" data-track="viewProject">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="webapp">
+            <div class="project-card-header">
+              <span class="project-tag">Webapp</span>
+            </div>
+            <h3 class="project-title">EdSphere - Collaborative Learning Hub</h3>
+            <p class="project-desc">A responsive web platform designed to facilitate team-based academic studying.
+              Supports document sharing, rich-text notes collaboration, and interactive quizzes utilizing MongoDB and
+              Express.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="webapp">
+            <div class="project-card-header">
+              <span class="project-tag">Webapp</span>
+            </div>
+            <h3 class="project-title">SpendWise - Financial Expense Tracker</h3>
+            <p class="project-desc">A Next.js dashboard featuring chart visualizations of personal expenditures.
+              Integrates secure user authentication, multi-currency tracking, and automated budgeting notifications.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- ==========================================
+             CATEGORY: WEBSITE (3 Projects)
+             ========================================== -->
+          <article class="project-card" data-category="website">
+            <div class="project-card-header">
+              <span class="project-tag">Website</span>
+            </div>
+            <h3 class="project-title">Somaiya Coding Labs Portal</h3>
+            <p class="project-desc">A clean, responsive static website for the official campus coding society.
+              Highlights upcoming hackathons, past achievements, active student projects, and features a dark/light mode
+              toggle.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="website">
+            <div class="project-card-header">
+              <span class="project-tag">Website</span>
+            </div>
+            <h3 class="project-title">Portfolium - Resume Generator</h3>
+            <p class="project-desc">A simple client-side HTML/CSS web application that allows students to input their
+              skills and projects and instantly export a premium-styled single page static portfolio.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="website">
+            <div class="project-card-header">
+              <span class="project-tag">Website</span>
+            </div>
+            <h3 class="project-title">GreenRoots - Climate Action Blog</h3>
+            <p class="project-desc">A fast static website built with Jekyll and TailwindCSS, detailing climate action
+              blueprints, local environment events, and educational articles with high accessibility scores.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- ==========================================
+             CATEGORY: EXTENTION (3 Projects)
+             ========================================== -->
+          <article class="project-card" data-category="extention">
+            <div class="project-card-header">
+              <span class="project-tag">Extention</span>
+            </div>
+            <h3 class="project-title">TabManager Pro - Tab Organizer</h3>
+            <p class="project-desc">A lightweight Chrome extension to reduce browser memory usage. Groups open tabs by
+              category, search terms, or domain, enabling one-click tab suspension and session backups.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="extention">
+            <div class="project-card-header">
+              <span class="project-tag">Extention</span>
+            </div>
+            <h3 class="project-title">ColorPicker Plus - Developer Dropper</h3>
+            <p class="project-desc">An open-source browser utility extension that lets web developers pick HEX/RGBA
+              colors from any webpage, store color history, and export customized design color palettes.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="extention">
+            <div class="project-card-header">
+              <span class="project-tag">Extention</span>
+            </div>
+            <h3 class="project-title">ReadAssist - Dyslexia Reader</h3>
+            <p class="project-desc">A browser extension designed to increase web reading comfort. Features custom
+              dyslexia-friendly font face overrides, line overlays, and text-to-speech converters.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- ==========================================
+             CATEGORY: IOT/EMBEDDED (3 Projects)
+             ========================================== -->
+          <article class="project-card" data-category="iot-embedded">
+            <div class="project-card-header">
+              <span class="project-tag">IoT/Embedded</span>
+            </div>
+            <h3 class="project-title">SmartHome Hub - ESP32 Controller</h3>
+            <p class="project-desc">An ESP32-based hardware controller connecting household appliances to a centralized
+              dashboard via MQTT, featuring responsive voice commands and low-power operations.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="iot-embedded">
+            <div class="project-card-header">
+              <span class="project-tag">IoT/Embedded</span>
+            </div>
+            <h3 class="project-title">AquaGrow - Smart Soil Irrigation</h3>
+            <p class="project-desc">An automated irrigation system built with NodeMCU. Utilizes moisture sensors to
+              automate water pump relays, publishing soil status metrics to a remote web dashboard in real time.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="iot-embedded">
+            <div class="project-card-header">
+              <span class="project-tag">IoT/Embedded</span>
+            </div>
+            <h3 class="project-title">SafeRider - Bicycle Crash Alert</h3>
+            <p class="project-desc">A Raspberry Pi Pico device embedded with an accelerometer and GPS module. Instantly
+              detects crash events and coordinates text warnings to emergency contacts via GSM.</p>
+            <div class="project-actions">
+              <a href="#" class="view-project-link">View Case Study →</a>
+              <a href="https://github.com/v3ravani" target="_blank" rel="noopener noreferrer" class="github-icon-link"
+                title="GitHub" data-track="github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Footer Copyright -->
+      <footer class="footer">
+        <p class="footer-copyright">
+          <span class="copyright-symbol">&copy;</span>
+          <span>2026 Viraj Ravani. All rights reserved.</span>
+        </p>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script>
+    // ==========================================
+    // INTERACTIVE CATEGORY FILTER SYSTEM
+    // ==========================================
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Toggle active button style
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        projectCards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+
+          if (filterValue === 'all' || cardCategory === filterValue) {
+            // Display matching cards and transition them smoothly
+            card.style.display = 'flex';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }, 10);
+          } else {
+            // Fade and scale down matching cards before hiding
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+
+
+    // ==========================================
+    // PROJECTS POPUP TRIGGER LOGIC
+    // ==========================================
+    document.addEventListener('DOMContentLoaded', () => {
+      const toast = document.getElementById('askAiToast');
+      const toastText = document.getElementById('toastText');
+      const projectLinks = document.querySelectorAll('.view-project-link');
+      let toastTimeout = null;
+
+      function showToast(message) {
+        if (!toast || !toastText) return;
+        toastText.textContent = message;
+        toast.classList.add('show');
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2500);
+      }
+
+      projectLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href');
+          if (href === '#' || !href) {
+            e.preventDefault();
+            showToast('Project in development phase, come back later.');
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Toast Notification for Building Phase -->
+  <div class="ask-ai-toast" id="askAiToast">
+    <span class="toast-icon">🚧</span>
+    <span class="toast-text" id="toastText">Project in development phase, come back later.</span>
+  </div>
+
+  <script type="module" src="../analytics/analytics.js" defer></script>
+</body>
+
+</html>

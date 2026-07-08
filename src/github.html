@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to GitHub...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FBFBFA;
+      color: #191919;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 400px;
+    }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid rgba(25, 25, 25, 0.1);
+      border-radius: 50%;
+      border-top-color: #191919;
+      animation: spin 1s ease-in-out infinite;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 0.95rem;
+      color: #757575;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #191919;
+      color: #ffffff;
+      padding: 10px 24px;
+      border-radius: 100px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(25, 25, 25, 0.15);
+    }
+    .btn:hover {
+      background-color: #333333;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="spinner"></div>
+    <h1>Opening GitHub</h1>
+    <p>We are opening the GitHub app. If you are not redirected automatically, please click below.</p>
+    <a href="https://github.com/v3ravani" class="btn" id="manualLink">Open GitHub</a>
+  </div>
+
+  <script>
+    // Prevent redirect history deadlock loop
+    if (sessionStorage.getItem('redirected_github')) {
+      sessionStorage.removeItem('redirected_github');
+      window.location.replace('index.html');
+    } else {
+      sessionStorage.setItem('redirected_github', 'true');
+      const webUrl = 'https://github.com/v3ravani';
+      window.location.replace(webUrl);
+    }
+  </script>
+</body>
+</html>

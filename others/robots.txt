@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /api/
+Disallow: /backup/
+Disallow: /analytics/
+Disallow: /call/
+Disallow: /phone/
+Disallow: /linkedin/
+Disallow: /email/
+Disallow: /wall-of-failure/
+
+Sitemap: https://www.virajravani.in/sitemap.xml
